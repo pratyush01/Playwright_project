@@ -28,6 +28,7 @@ const config = ({
         screenshot: 'only-on-failure',
         video: 'retain-on-failure',
         browserName: 'chromium',
+        headless: false,
       },   
 
 

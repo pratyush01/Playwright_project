@@ -52,7 +52,7 @@ console.log(marks.includes(8));
 
 console.log("    ");
 
-console.log(marks.slice(2,5));  // 3,8,15 because [89,6,3,8,15,33,55]
+console.log(marks.slice(2, 5));  // 3,8,15 because [89,6,3,8,15,33,55]
 
 // for loop to iterate this array
 
@@ -60,11 +60,10 @@ console.log("   ");
 
 var sum = 0;
 var sum1 = 0;
-for(let i=0; i<marks.length; i++)
-{
- console.log(marks[i]);
- sum = sum + marks[i];
- sum1 = sum1 + 1;
+for (let i = 0; i < marks.length; i++) {
+    console.log(marks[i]);
+    sum = sum + marks[i];
+    sum1 = sum1 + 1;
 }
 console.log(sum);
 console.log("    ");
@@ -74,18 +73,16 @@ console.log(sum1);
 
 console.log("   ");
 
-marks.reduce((sum, mark)=> sum+mark,0)
+marks.reduce((sum, mark) => sum + mark, 0)
 
 console.log("   ");
 console.log("Find Even numbers");
 console.log("   ");
-var scores = [12,13,14,16];
+var scores = [12, 13, 14, 16];
 var scores1 = [];
-for(let i=0;i<scores.length; i++)
-{
-    if(scores[i]% 2 == 0)
-    {
-       scores1.push(scores[i]);
+for (let i = 0; i < scores.length; i++) {
+    if (scores[i] % 2 == 0) {
+        scores1.push(scores[i]);
     }
 }
 console.log(scores1);
@@ -96,12 +93,10 @@ console.log("Find all even number and multiply each value by 3");
 console.log("   ");
 
 var scores2 = [];
-for(let i=0; i<scores.length; i++)
-{
-    if(scores[i] % 2 == 0)
-    {
+for (let i = 0; i < scores.length; i++) {
+    if (scores[i] % 2 == 0) {
         //let scores3 = scores[i]*3;
-        scores2.push(scores[i]*3);
+        scores2.push(scores[i] * 3);
     }
 }
 console.log(scores2);
@@ -112,13 +107,11 @@ console.log("  ");
 
 var scores4 = [];
 var scores3 = 0;
-for(let i = 0; i<scores.length; i++)
-{
-    if(scores[i] % 2 == 0)
-    {
-        scores4.push(scores[i]*3);
+for (let i = 0; i < scores.length; i++) {
+    if (scores[i] % 2 == 0) {
+        scores4.push(scores[i] * 3);
         //scores3 = scores3 + scores4[i];
-        scores3 = scores3 + (scores[i]*3);
+        scores3 = scores3 + (scores[i] * 3);
     }
 }
 console.log(scores4);
@@ -137,7 +130,7 @@ console.log(fruits);
 
 console.log("  ");
 
-var scores5 = [12,13,19,16,14]
+var scores5 = [12, 13, 19, 16, 14]
 console.log(scores5.sort());
 
 console.log("  ");
@@ -145,21 +138,20 @@ console.log("  ");
 var scores6 = [12, 009, 13, 19, 16, 14] // this breaks as we got number 009
 console.log(scores6.sort());
 console.log("  ");
-console.log(scores6.sort((a,b)=> a - b));
+console.log(scores6.sort((a, b) => a - b));
 
 console.log("------------------------------------------Bubble Sorting -------------------------------------");
 
 var scores7 = [12, 009, 19, 16, 14]
-for(let i=0; i<scores7.length; i++)
-{
-    for(let j = 0; j<scores7.length - 1 - i; j++)
-    {
-        if(scores7[j] > scores7[j + 1])
-        {
+for (let i = 0; i < scores7.length; i++) {
+    for (let j = 0; j < scores7.length - 1 - i; j++) {
+        if (scores7[j] > scores7[j + 1]) {
             let temp = scores7[j];
-            scores7[j] = scores7[ j+ 1 ];
+            scores7[j] = scores7[j + 1];
             scores7[j + 1] = temp;
         }
     }
 }
 console.log(scores7);
+
+//nvapi - kKDsMhC1vwvCKYg5OC9DShBlvjyWvNtqaMqr - ObykN0TuzZ0VvaKAujhAPf6tc56
